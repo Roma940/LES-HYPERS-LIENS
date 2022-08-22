@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche d'inscription</title>
+</head>
+
+<body>
+    <h1>Fiche d'inscription</h1>
+
+    <form method="post">
+        <fieldset>
+            <legend>Remplissez le Formulaire</legend>
+            
+            <div>Sex</div>
+            <div>
+                <label for="masculin">Masculin</label>
+                <input type="radio" id="masculin" name="civilite" value="masculin">
+                <label for="feminin">Feminin</label>
+                <input type="radio" id="feminin" name="civilite" value="feminin">
+            </div>
+
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom et Prenom">
+            </div>
+            
+            <div>
+                <label for="date">Date de naissance</label>
+                <input type="date" id="date" name="date">
+            </div>
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            
+            <div>
+                <label for="picture">Votre Photo</label>
+                <input type="file" id="picture" name="picture" accept="image/jpeg, image/png">
+            </div>
+            
+            <div>
+                <div>Nationnalité</div>
+                
+                <select name="pays" id="pays" size="3">
+                    <option value="france">France</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="maroc">Maroc</option>
+                    <option value="etat-unis">Etat-Unis</option>
+                    <option value="norvege">Norvege</option>
+                    <option value="benin">Benin</option>
+                    <option value="togo">Togo</option>
+                    <option value="afrique-sud">Afrique-sud</option>
+                    <option value="pays-bas">Pays-bas</option>
+                    <option value="japon">Japon</option>
+                    <option value="chine">Chine</option>
+                    <option value="singapoor">Singapoor</option>
+                    <option value="gibraltar">Gibraltar</option>
+                </select>
+            </div>
+            
+            <div>
+                <div><label for="Bio">Description</label></div>
+                <textarea name="Bio" id="Bio" cols="30" rows="10"></textarea>
+            </div>
+             
+            <div>Sport</div>
+            <select name="sport" id="sport" size="2">
+                
+                <option value="football">Football</option>
+                <option value="baseball">Baseball</option>
+                <option value="tenis">Tenis</option>
+                <option value="tir-a-l'arc">Tir-a-l'arc</option>
+                <option value="couse-obstacle">Couse-obstacle</option>
+                <option value="athletisme">Athletisme</option>
+                <option value="criket">Criket</option>
+
+            </select>
+            
+            
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="passeword" placeholder="Mot de passe">
+            </div>
+
+
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Envoye">
+            <input type="reset" value="Effacer">
+        </div>
+
+
+    </form>
+
+
+
+</body>
+</html>
